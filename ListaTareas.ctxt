@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ListaTareas()
+comment1.params=descripcionTarea
+comment1.target=void\ addTarea(java.lang.String)
+comment2.params=
+comment2.target=void\ mostrarTareas()
+comment3.params=posicionTarea
+comment3.target=void\ marcarComoCompletada(int)
+comment4.params=textoABuscar
+comment4.target=void\ mostrarCoincidentes(java.lang.String)
+comment5.params=posicionTarea
+comment5.target=void\ eliminarTarea(int)
+numComments=6
