@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.time.LocalDate;
 /**
  * Write a description of class ListaTareas here.
  * 
@@ -9,11 +10,12 @@ public class ListaTareas
 {
     private ArrayList<Tarea> listaDeTareas;
     
+    
     public ListaTareas()
     {
         listaDeTareas = new ArrayList<Tarea>();
     }
-    
+ 
     public void addTarea(String descripcionTarea)
     {
         Tarea tarea = new Tarea(descripcionTarea);
@@ -58,8 +60,26 @@ public class ListaTareas
         }           
     }
     
+    public void nuevaPrioridad (int posicion,int prioridad)
+    {
+        int posicionReal = posicion - 1;
+        if(posicionReal >= 0 && posicionReal < listaDeTareas.size()){
+            if (prioridad >= 0 && prioridad <= 5){
+                listaDeTareas.get(posicionReal).cambiarPrioridad(prioridad);
+        
+            }
+        }
+    }
     
+    public void mostrarFecha(){
+   
+    
+    }
 }
+  
+   
+
+
 
 
 
